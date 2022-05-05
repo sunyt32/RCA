@@ -1,9 +1,8 @@
-#include <cstdio>
+#pragma once
 
+static unsigned int seed = 0x21367afd;
 
-unsigned int genPRNG ( const void * key, int len, unsigned int seed )
-{
-
+unsigned int prng(const void *key, int len) {
 	const unsigned int m = 0x5bd1e995;
 	const int r = 24;
 
@@ -35,18 +34,6 @@ unsigned int genPRNG ( const void * key, int len, unsigned int seed )
 	h ^= h >> 13;
 	h *= m;
 	h ^= h >> 15;
-	
+	seed = h;
 	return h;
 } 
-
-//test
-main(){
-    char input[2048];
-    unsigned int m;
-    unsigned int seed = 0x21367afd;
-    scanf("%s", input);
-    m = genPRNG(input,28, seed);
-    printf("%02x \n", m);
-    printf("\n");
-    return 0;
-}

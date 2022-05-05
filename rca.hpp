@@ -2,13 +2,10 @@
 
 #include <cstring>
 #include <cstdlib>
+#include "prng.hpp"
 
 static const unsigned int init[4] = {0xd76aa478, 0xf61e2562, 0xfffa3942, 0xf4292244};
 
-//TODO: change to advanced algorithm
-unsigned int prand() {
-    return rand();
-}
 
 inline unsigned int rotl(unsigned int a, unsigned int b) {
     b &= 0x1f;
@@ -127,16 +124,16 @@ void rca(char *message, int len, unsigned char *output) {
             memory[2] ^= block[2];
             ptr = len;
         }
+        arg = prng(message, len);
+        // arg = rand();
         for(int i = 0; i < 4; i++) {
             mapping(memory, in, out);
-            arg = prand();
             in = next(in, arg & 0x3);
             out = next(out, (arg >> 2) & 0x3);
+            arg >>= 4;
         }
     }
     mapping(memory, in, out);
-    memcpy(output, memory, 5);
-    mapping(memory, in, out);
-    memcpy(output + 5, memory, 5);
+    memcpy(output, memory, 10);
 }
 
