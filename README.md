@@ -5,5 +5,8 @@ Random cell automata for hash algorithm.
 # 运行方式
 $ gcc main.cpp -o rca
 $ ./rca
+$ 之后手动输入测试字符串
 
-可以选择输入待加密字符，或指定文件输入
+或者在input.txt输入测例，使用以下命令测试
+$ ./rca < input.txt
+
