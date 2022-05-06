@@ -1,9 +1,9 @@
 #pragma once
 
 static unsigned int seed = 0x21367afd;
+const unsigned int m = 0x5bd1e995;
 
 unsigned int prng(const void *key, int len) {
-	const unsigned int m = 0x5bd1e995;
 	const int r = 24;
 
 	unsigned int h = seed ^ len;

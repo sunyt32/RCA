@@ -124,7 +124,7 @@ void rca(char *message, int len, unsigned char *output) {
             memory[2] ^= block[2];
             ptr = len;
         }
-        arg = prng(message, len);
+        arg = prng(block, 12);
         // arg = rand();
         for(int i = 0; i < 4; i++) {
             mapping(memory, in, out);
