@@ -112,18 +112,16 @@ void rca(char *message, int len, unsigned char *output) {
     memory[0] ^= len;
     while(ptr < len) {
         if(ptr + 12 <= len) {
-            memory[0] ^= *((unsigned int*)(message + ptr));
-            memory[1] ^= *((unsigned int*)(message + ptr + 4));
-            memory[2] ^= *((unsigned int*)(message + ptr + 8));
+            memcpy(block, message, 12);
             ptr += 12;
         } else {
             memcpy(block, message, len - ptr);
             memset((unsigned char*)block + len - ptr, 0, 12 - (len - ptr));
-            memory[0] ^= block[0];
-            memory[1] ^= block[1];
-            memory[2] ^= block[2];
             ptr = len;
         }
+        memory[0] ^= block[0];
+        memory[1] ^= block[1];
+        memory[2] ^= block[2];
         arg = prng(block, 12);
         // arg = rand();
         for(int i = 0; i < 4; i++) {
