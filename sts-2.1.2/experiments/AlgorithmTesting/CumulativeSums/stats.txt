@@ -2,159 +2,127 @@
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 88
+		(a) The maximum partial sum = 8
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.727622
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 89
+		(a) The maximum partial sum = 8
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.727622
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 58
+		(a) The maximum partial sum = 24
 		-------------------------------------------
-FAILURE		p_value = 0.000578
+SUCCESS		p_value = 0.014581
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 59
+		(a) The maximum partial sum = 17
 		-------------------------------------------
-FAILURE		p_value = 0.000453
+SUCCESS		p_value = 0.114694
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 71
+		(a) The maximum partial sum = 12
 		-------------------------------------------
-FAILURE		p_value = 0.000018
+SUCCESS		p_value = 0.359311
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 68
+		(a) The maximum partial sum = 8
 		-------------------------------------------
-FAILURE		p_value = 0.000043
+SUCCESS		p_value = 0.727622
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 67
+		(a) The maximum partial sum = 25
 		-------------------------------------------
-FAILURE		p_value = 0.000056
+SUCCESS		p_value = 0.010377
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 66
+		(a) The maximum partial sum = 25
 		-------------------------------------------
-FAILURE		p_value = 0.000074
+SUCCESS		p_value = 0.010377
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 92
+		(a) The maximum partial sum = 7
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.830116
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 92
+		(a) The maximum partial sum = 5
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.975431
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 85
+		(a) The maximum partial sum = 6
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.917914
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 85
+		(a) The maximum partial sum = 10
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.525513
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 90
+		(a) The maximum partial sum = 11
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.437067
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 91
+		(a) The maximum partial sum = 12
 		-------------------------------------------
-FAILURE		p_value = 0.000000
+SUCCESS		p_value = 0.359311
 
 		      CUMULATIVE SUMS (FORWARD) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 61
+		(a) The maximum partial sum = 24
 		-------------------------------------------
-FAILURE		p_value = 0.000275
+SUCCESS		p_value = 0.014581
 
 		      CUMULATIVE SUMS (REVERSE) TEST
 		-------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		-------------------------------------------
-		(a) The maximum partial sum = 63
+		(a) The maximum partial sum = 21
 		-------------------------------------------
-FAILURE		p_value = 0.000165
-
-		      CUMULATIVE SUMS (FORWARD) TEST
-		-------------------------------------------
-		COMPUTATIONAL INFORMATION:
-		-------------------------------------------
-		(a) The maximum partial sum = 103
-		-------------------------------------------
-FAILURE		p_value = 0.000000
-
-		      CUMULATIVE SUMS (REVERSE) TEST
-		-------------------------------------------
-		COMPUTATIONAL INFORMATION:
-		-------------------------------------------
-		(a) The maximum partial sum = 102
-		-------------------------------------------
-FAILURE		p_value = 0.000000
-
-		      CUMULATIVE SUMS (FORWARD) TEST
-		-------------------------------------------
-		COMPUTATIONAL INFORMATION:
-		-------------------------------------------
-		(a) The maximum partial sum = 74
-		-------------------------------------------
-FAILURE		p_value = 0.000007
-
-		      CUMULATIVE SUMS (REVERSE) TEST
-		-------------------------------------------
-		COMPUTATIONAL INFORMATION:
-		-------------------------------------------
-		(a) The maximum partial sum = 75
-		-------------------------------------------
-FAILURE		p_value = 0.000006
+SUCCESS		p_value = 0.037762
 

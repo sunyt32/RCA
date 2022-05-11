@@ -11,20 +11,29 @@ int bps(char* input) {
         rca(input,strlen(input), output);
         count++;
     }
-    return 8*strlen(input)*count;
+    return 8 * strlen(input) * count;
 }
 
 int main() {
-    char input[2048];
+    char *input = new char[1 << 24];
     unsigned char output[10];
-    scanf("%s", input);
-    rca(input, strlen(input), output);
-    printf("Encrypt speed: %d bps\n",bps(input));
-    printf("hash value: ");
-    for(int i = 0; i < 10; i++) {
-        printf("%02x", output[i]);
+    FILE *fp = fopen("output.bin", "wb");
+    int count = 0;
+    while(true) {
+        if(scanf("%s", input) == -1) {
+            break;
+        }
+        rca(input, strlen(input), output);
+        // printf("Encrypt speed: %d bps\n",bps(input));
+        // printf("hash value: ");
+        for(int i = 0; i < 10; i++) {
+            printf("%02x", output[i]);
+        }
+        printf("\n");
+        fwrite(output, 10, sizeof(unsigned char), fp);
+        count++;
     }
-    printf("\n");
+    printf("Encode %d sequences.\n", count);
     return 0;
 }
 

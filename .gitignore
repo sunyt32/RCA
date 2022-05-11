@@ -54,4 +54,4 @@ dkms.conf
 .vscode
 rca
 sts-2.1.2/assess
-sts-2.1.2/experiments
+output.bin

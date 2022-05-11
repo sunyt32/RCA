@@ -1,48 +1,96 @@
 				RUNS TEST
 		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.671875
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.462500
+		(b) V_n_obs (Total # of runs) = 43
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 0.512802
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.468322
+
 				RUNS TEST
 		------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		------------------------------------------
-		(a) Pi                        = 0.613281
-		(b) V_n_obs (Total # of runs) = 122
+		(a) Pi                        = 0.400000
+		(b) V_n_obs (Total # of runs) = 41
 		(c) V_n_obs - 2 n pi (1-pi)
-		    -----------------------   = 0.053137
+		    -----------------------   = 0.428225
 		      2 sqrt(2n) pi (1-pi)
 		------------------------------------------
-SUCCESS		p_value = 0.940098
+SUCCESS		p_value = 0.544779
 
-				RUNS TEST
-		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.632812
-				RUNS TEST
-		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.628906
-				RUNS TEST
-		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.679688
-				RUNS TEST
-		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.664062
-				RUNS TEST
-		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.675781
 				RUNS TEST
 		------------------------------------------
 		COMPUTATIONAL INFORMATION:
 		------------------------------------------
-		(a) Pi                        = 0.617188
-		(b) V_n_obs (Total # of runs) = 123
+		(a) Pi                        = 0.525000
+		(b) V_n_obs (Total # of runs) = 41
 		(c) V_n_obs - 2 n pi (1-pi)
-		    -----------------------   = 0.189974
+		    -----------------------   = 0.174361
 		      2 sqrt(2n) pi (1-pi)
 		------------------------------------------
-SUCCESS		p_value = 0.788188
+SUCCESS		p_value = 0.805230
 
 				RUNS TEST
 		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.699219
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.362500
+		(b) V_n_obs (Total # of runs) = 40
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 0.517425
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.464322
+
 				RUNS TEST
 		------------------------------------------
-		PI ESTIMATOR CRITERIA NOT MET! PI = 0.640625
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.475000
+		(b) V_n_obs (Total # of runs) = 42
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 0.332871
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.637818
+
+				RUNS TEST
+		------------------------------------------
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.525000
+		(b) V_n_obs (Total # of runs) = 37
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 0.459679
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.515637
+
+				RUNS TEST
+		------------------------------------------
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.562500
+		(b) V_n_obs (Total # of runs) = 42
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 0.421637
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.550985
+
+				RUNS TEST
+		------------------------------------------
+		COMPUTATIONAL INFORMATION:
+		------------------------------------------
+		(a) Pi                        = 0.625000
+		(b) V_n_obs (Total # of runs) = 30
+		(c) V_n_obs - 2 n pi (1-pi)
+		    -----------------------   = 1.264911
+		      2 sqrt(2n) pi (1-pi)
+		------------------------------------------
+SUCCESS		p_value = 0.073638
+
