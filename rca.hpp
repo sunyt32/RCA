@@ -2,6 +2,7 @@
 
 #include <cstring>
 #include <cstdlib>
+#include <cstdio>
 #include "prng.hpp"
 
 static const unsigned int init[4] = {0xd76aa478, 0xf61e2562, 0xfffa3942, 0xf4292244};

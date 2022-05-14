@@ -4,18 +4,18 @@
 
 int bps(char* input) {
     unsigned char output[10];
-    time_t begin = time(0);
     int count = 0;
-    printf("length: %d \n",strlen(input) );
-    while(time(0) - begin < 1) {
+    printf("size: %d Bytes\n",strlen(input) );
+    time_t begin = time(0);
+    while(time(0) - begin < 5) {
         rca(input,strlen(input), output);
         count++;
     }
-    return 8 * strlen(input) * count;
+    return 8*strlen(input)*count/5;
 }
 
 int main() {
-    char *input = new char[1 << 24];
+    char input[1024*1024];
     unsigned char output[10];
     FILE *fp = fopen("output.bin", "wb");
     int count = 0;
@@ -24,8 +24,8 @@ int main() {
             break;
         }
         rca(input, strlen(input), output);
-        // printf("Encrypt speed: %d bps\n",bps(input));
-        // printf("hash value: ");
+        printf("Encrypt speed: %d bps\n",bps(input));
+        printf("hash value: ");
         for(int i = 0; i < 10; i++) {
             printf("%02x", output[i]);
         }
