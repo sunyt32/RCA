@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include "prng.hpp"
 
+// 初始值来源：与md5相同
 static const unsigned int init[4] = {0xd76aa478, 0xf61e2562, 0xfffa3942, 0xf4292244};
 
 
@@ -104,14 +105,15 @@ void print_memory(unsigned int *memory) {
 }
 
 void rca(char *message, int len, unsigned char *output) {
-    unsigned int memory[4];
-    unsigned int block[3];
+    unsigned int memory[4];  // memory中存储四个过程中的参数（类似md5）
+    unsigned int block[3];   // block用来每次存message中三个byte的内容
     unsigned int ptr = 0, arg;
     ST in = 1, out = 3;
-    memcpy(memory, init, 4 * sizeof(unsigned int));
-    memory[0] ^= len;
+    memcpy(memory, init, 4 * sizeof(unsigned int)); 
+    memory[0] ^= len; // 用len解决0和00哈希值不同的问题
     seed_reset();
     while(ptr < len) {
+        // 每次取12byte和 memory[0/1/2]做异或，不足补0
         if(ptr + 12 <= len) {
             memcpy(block, message + ptr, 12);
             ptr += 12;
@@ -123,8 +125,11 @@ void rca(char *message, int len, unsigned char *output) {
         memory[0] ^= block[0];
         memory[1] ^= block[1];
         memory[2] ^= block[2];
+        // 根据这12byte组成的block生成一个伪随机数
         arg = prng(block, 12);
         // arg = rand();
+        // mapping会根据in、out对memory的四个数进行循环移位/异或等操作
+        // next会根据in/out和arg做状态转换，即状态机
         for(int i = 0; i < 4; i++) {
             mapping(memory, in, out);
             in = next(in, arg & 0x3);
