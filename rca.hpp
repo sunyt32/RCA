@@ -105,6 +105,7 @@ void print_memory(unsigned int *memory) {
 }
 
 void rca(char *message, int len, unsigned char *output) {
+    seed = 0x21367afd;
     unsigned int memory[4];
     unsigned int block[3];
     unsigned int ptr = 0, arg;

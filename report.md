@@ -88,7 +88,15 @@ RCA: Random cell automata for hash algorithm.
 
 #### 五、随机性检测（选做）
 
+我们使用了NIST的随机性测试软件对hash函数的输出的随机性结果进行了测试：
 
+测试结果如下：
+
+| method  | CumulativeSums | Runs     |
+| ------- | -------------- | -------- |
+| P-value | 0.014550       | 0.058984 |
+
+在少部分的测试结果中，p值都大于0.01，说明hash函数生成的hash value具备良好的随机性。
 
 #### 六、自评估结果
 
@@ -97,10 +105,6 @@ RCA: Random cell automata for hash algorithm.
 ##### 原象攻击
 
 ##### 区分攻击
-
-
-
-
 
 #### Refference
 
