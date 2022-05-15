@@ -110,6 +110,7 @@ void rca(char *message, int len, unsigned char *output) {
     ST in = 1, out = 3;
     memcpy(memory, init, 4 * sizeof(unsigned int));
     memory[0] ^= len;
+    seed_reset();
     while(ptr < len) {
         if(ptr + 12 <= len) {
             memcpy(block, message + ptr, 12);

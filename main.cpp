@@ -6,7 +6,7 @@ int bps(char* input) {
     unsigned char output[10];
     time_t begin = time(0);
     int count = 0;
-    printf("plain text: %s  length: %d \n",input,strlen(input) );
+    printf("plain text: %s  length: %d \n",input,(int)strlen(input) );
     while(time(0) - begin < 1) {
         rca(input,strlen(input), output);
         count++;
