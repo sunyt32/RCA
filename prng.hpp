@@ -3,6 +3,10 @@
 static unsigned int seed = 0x21367afd;
 const unsigned int m = 0x5bd1e995;
 
+void seed_reset(){
+	seed = 0x21367afd;
+}
+
 unsigned int prng(const void *key, int len) {
 	const int r = 24;
 
